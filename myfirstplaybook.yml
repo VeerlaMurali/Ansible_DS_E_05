@@ -1,0 +1,22 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install webserver on Ubuntu
+    apt:
+     name: apache2
+     state: present
+
+  - name: i want to start web server on Ubuntu
+    service:
+     name: apache2
+     state: started
+  - name: i want to install tree on Ubuntu
+    apt:
+     name: tree
+     state: present
+  
+  - name: i want to uninstall wget on Ubuntu
+    apt:
+     name: wget
+     state: absent
