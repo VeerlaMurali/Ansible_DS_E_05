@@ -1,0 +1,9 @@
+---
+- name: all
+  become: yes
+  tasks:
+  - name : I want to install webserver on Ubuntu
+    apt:
+     name: apache2
+     state: presnt
+
