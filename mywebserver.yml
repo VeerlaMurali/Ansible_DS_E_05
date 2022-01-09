@@ -14,13 +14,13 @@
     when: ansible_os_family== "Debian"
 
 
-  - name: i want to install webserver on RedhatM
+  - name: i want to install webserver on Redhat
     yum:
      name: httpd
      state: present
     when: ansible_os_family== "RedHat"
-  - name: I want to start webserver service on RedhatM
+  - name: I want to start webserver service on Redhat
     service:
-     name: apache2
+     name: httpd
      state: started
      when: ansible_os_family== "RedHat"
