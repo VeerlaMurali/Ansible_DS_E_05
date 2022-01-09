@@ -19,8 +19,4 @@
      name: httpd
      state: present
     when: ansible_os_family== "RedHat"
-  - name: I want to start webserver service on Redhat
-    service:
-     name: httpd
-     state: started
-     when: ansible_os_family== "RedHat"
+ 
