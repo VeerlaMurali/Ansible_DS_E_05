@@ -2,3 +2,7 @@
 172.31.31.52
 172.31.17.48
 
+[Webserver:vars]
+    key=value
+myubuntuwebpackage=apache2
+myredhatwebpackage=httpd
