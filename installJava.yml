@@ -7,3 +7,8 @@
      name: "{{installJavaUbuntu}}"
      state: present
     when: ansible_os_family== "Debian"
+  - name: i want to install Java on Redhat
+    yum:
+     name: "{{installJavaRedhat}}"
+     state: present
+    when: ansible_os_family== "RedHat"
