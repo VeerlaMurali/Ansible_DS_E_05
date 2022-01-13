@@ -4,6 +4,6 @@
   tasks:
   - name: I want to install Java on Ubuntu
     apt:
-     name: openjdk-8-jre
+     name: "{{installJavaUbuntu}}"
      status: present
     when: ansible_os_family== "Debian"

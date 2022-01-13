@@ -2,3 +2,4 @@
 key: value
 myubuntuwebpackage: apache2
 myredhatwebpackage: httpd
+installJavaUbuntu: openjdk-8-jre
