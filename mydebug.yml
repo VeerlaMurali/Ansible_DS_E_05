@@ -1,0 +1,10 @@
+---
+- hosts: 172.31.31.52
+  become: yes
+  tasks:
+  - name: I want to display linux command result
+    command: hostname -f
+    register: resultofcmd
+  - name: display the command result
+    debug:
+      msg: "{{resultofcmd}}"
