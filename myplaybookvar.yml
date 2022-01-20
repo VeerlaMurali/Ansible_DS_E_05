@@ -4,7 +4,7 @@
   vars:
     myvar1: git
     myvar2: tree
-    tasks:
-- name: I want to display the data of myvar1
-  debug:
-    msg: "{{myvar1}}"
+  tasks:
+  - name: I want to display the data of myvar1
+    debug:
+      msg: "{{myvar1}}"
