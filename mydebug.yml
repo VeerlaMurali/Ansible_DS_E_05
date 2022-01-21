@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: I want to display linux command result
-    command: hostname -f
+    command: apt-get install apache2 -y
     register: resultofcmd
   - name: display the command result
     debug:
