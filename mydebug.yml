@@ -8,3 +8,13 @@
   - name: display the command result
     debug:
       msg: "{{resultofcmd}}"
+  - name: install tree
+    apt:
+      name: tree
+      state: present
+    when: resultofcmd.stderr==""
+  - name: install wget
+    apt:
+      name: wget
+      state: present
+    when: resultofcmd.stderr!=""
