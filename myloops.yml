@@ -2,11 +2,11 @@
 - hosts: 172.31.31.52
   become: yes
   tasks:
-  - name: i wana install wget , git , tree
+  - name: i want to install webserver on Ubuntu
     apt:
      name: "{{ item }}"
      state: present
     loops:
+     - git
      - wget
      - tree
-     - git
