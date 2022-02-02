@@ -4,12 +4,12 @@
   tasks:
   - include_tasks: myfile.yml
 
-- name: i want to install webserver
-  apt:
-   name: apache2
-   state: present
-   
-- name: i want to restart the service
-  service:
-   name: apache2
-   state: restart
+  - name: i want to install webserver
+    apt:
+     name: apache2
+     state: present
+  
+  - name: I want to install restart the webserver
+    apt:
+     name: apache2
+     state: restart
