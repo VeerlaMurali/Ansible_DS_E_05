@@ -10,6 +10,6 @@
      state: present
   
   - name: I want to install restart the webserver
-    apt:
+    service:
      name: apache2
      state: restarted
