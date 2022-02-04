@@ -1,2 +1,10 @@
 ---
-# tasks file for mywebrole1
+- name: I want to install webserver
+  apt:
+    name: apache2
+    state: present
+
+- name: I want to restart the webserver
+  service:
+   name: apache2
+   state: restarted
