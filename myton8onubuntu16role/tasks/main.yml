@@ -1,2 +1,8 @@
 ---
 # tasks file for myton8onubuntu16role
+- include_tasks: installjava.yml
+- include_tasks: createusergroup.yml
+- include_tasks: installtomcat.yml
+- include_tasks: Permissions.yml
+- include_tasks: tomservicefile.yml
+- include_tasks: starttomcat.yml
