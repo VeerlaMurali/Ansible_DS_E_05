@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.21.16
+- hosts: Webserver
   become: yes
   roles:
     - {role: myton8onubuntu16role, when: ansible_os_family=="Debian" }
